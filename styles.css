@@ -1,0 +1,21 @@
+.navbar-brand svg path:hover{
+    fill:rgb(93, 90, 90);
+    transition: 0.5s;
+}
+/* Hide text on larger screens */
+.text-sm {
+    display: none;
+}
+.hidden-profile{
+    display: none;
+}
+
+/* Show text and hide icon on small screens */
+@media (max-width: 992px) {
+    .hidden-profile{
+        display: block;
+    }
+    .profile{
+        display:none;
+    }
+}
