@@ -1,3 +1,6 @@
+.navbar {
+    background-color: transparent !important; /* Force transparency */
+}
 .navbar-brand svg path:hover{
     fill:rgb(93, 90, 90);
     transition: 0.5s;
@@ -8,6 +11,35 @@
 }
 .hidden-profile{
     display: none;
+}
+.main-section {
+    /* background-image: url('IMAGES/_.jpeg'); */
+    background-size: cover;         /* Ensures the image covers the container fully */
+    background-position: center;    /* Centers the image in the viewport */
+    background-repeat: no-repeat;   /* Prevents tiling of the image */
+    height: 100vh;                  /* Full viewport height */
+    width: 100vw;                   /* Full viewport width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* Styling for the welcome text and buttons */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.button-group .btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 30px;
 }
 
 /* Show text and hide icon on small screens */

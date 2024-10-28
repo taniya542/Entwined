@@ -1,0 +1,119 @@
+:root {
+  --white: #FFFFFF;
+  --grey: #AAAAAA;
+  --primary: #003366;  /* Dark Blue */
+  --light: #E0F7FA;    /* Light Cyan */
+  --dark: #002244;     /* Navy Blue */
+}
+
+body {
+  /* background-color: var(--light); */
+  margin: 2em;
+}
+
+header {
+  margin: 5em;
+}
+
+header img {
+  object-fit: contain;
+  width: 17vw;
+  height: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main img {
+  width: 80%;
+}
+
+form, 
+p, 
+.social-sign-up {
+  width: 70%;
+}
+
+form h4 {
+  color: var(--dark);
+  padding-bottom: 1em;
+}
+
+.form-control {
+  background-color: #e5e2e9;
+  opacity: 0.7;
+  margin-bottom: 1.5em;
+}
+
+.submit-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: var(--light);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+p {
+  color: var(--grey);
+}
+
+.hr-lines {
+  position: relative;
+  max-width: 500px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.hr-lines:before, 
+.hr-lines:after {
+  content: " ";
+  height: 2px;
+  width: 150px;
+  background: var(--grey);
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.hr-lines:before {
+  left: 0;
+}
+
+.hr-lines:after {
+  right: 0;
+}
+
+.social-sign-up button {
+  width: 100%;
+  border: 1px solid var(--dark);
+}
+
+.social-sign-up button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.fa-google {
+  background: conic-gradient(
+    from -45deg, 
+    #4285F4 110deg,  /* Google Blue */
+    #34A853 90deg 180deg, /* Green */
+    #FBBC05 180deg 270deg, /* Yellow */
+    #EA4335 270deg  /* Red */
+  ) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.sign-in {
+  margin: 1em 0;
+  text-align: center;
+}
