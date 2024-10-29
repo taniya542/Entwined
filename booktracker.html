@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Book Tracker</title>
+    <link rel="stylesheet" href="booktracker.css">
+</head>
+<body>
+    <header>
+        <h1>🌙 Book Tracker</h1>
+        <nav>
+            <button onclick="showDashboard()">Dashboard</button>
+            <button onclick="showLog()">Book Log</button>
+            <button onclick="showFilters()">Filters</button>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Your Dashboard</h2>
+            <div class="progress-overview">
+                <div>
+                    <h3>Books Read by Genre</h3>
+                    <canvas id="genreChart"></canvas>
+                </div>
+                <div>
+                    <h3>Reading Time Spent (Daily Progress)</h3>
+                    <div class="progress-bar-container">
+                        <div id="dailyProgressBar" class="progress-bar">
+                            <span id="progressLabel">0%</span>
+                        </div>
+                    </div>
+                    <canvas id="timeChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="log" style="display:none;">
+            <h2>Book Log</h2>
+            <div id="bookEntries" class="book-cards-container"></div>
+            
+        </section>
+        
+        
+        <section id="filters" style="display:none;">
+            <h2>Filters & Search</h2>
+            <input type="text" id="searchInput" placeholder="🔍 Search by title or author...">
+            <select id="genreFilter">
+                <option value="">Select Genre</option>
+            </select>
+            <select id="statusFilter">
+                <option value="">Completion Status</option>
+                <option value="read">Read</option>
+                <option value="wishlist">Wishlist</option>
+                <option value="reading">Currently Reading</option>
+            </select>
+            <button onclick="applyFilters()">Apply Filters</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Book Tracker</p>
+    </footer>
+    <script src="booktracker.js"></script>
+</body>
+</html>
