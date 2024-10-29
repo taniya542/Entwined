@@ -1,9 +1,40 @@
-.navbar {
-    background-color: transparent !important; /* Force transparency */
+.btn-primary{
+    background-color: #642047 !important;
+    border-color: #642047 !important;;
 }
-.navbar-brand svg path:hover{
+.btn-outline-primary{
+    color:#642047 !important;
+}
+.btn-outline-primary:hover{
+    background-color:#642047 !important;
+    color: white !important;
+}
+.btnn{
+    border-color: #642047 !important;
+}
+.btn-search{
+    border-color: #642047 !important;
+    color:#642047 !important;
+    border-radius: 20px;
+    border-width: 1.5px;
+}
+.btn-search:hover{
+    background-color: #642047;
+    color:white !important;
+}
+.navbar {
+    background-color: #c9c5b9 !important; /* Force transparency */
+    color:#6e6868 !important;
+}
+.icon svg path{
+    fill:#642047;
+}
+.icon svg path:hover{
     fill:rgb(93, 90, 90);
-    transition: 0.5s;
+    transition: 0.25s;
+}
+.navbar-brand{
+    color:#6e6868 !important;
 }
 /* Hide text on larger screens */
 .text-sm {
@@ -13,7 +44,7 @@
     display: none;
 }
 .main-section {
-    /* background-image: url('IMAGES/_.jpeg'); */
+    background-image: url('https://img.freepik.com/free-photo/decorative-dreamy-arrangement-with-dried-flowers_23-2151363325.jpg?t=st=1730186696~exp=1730190296~hmac=fc05dc9fc6d557dc37a09a716dd010776c780c216633d85bdb130b9a9e5ab617&w=1800');
     background-size: cover;         /* Ensures the image covers the container fully */
     background-position: center;    /* Centers the image in the viewport */
     background-repeat: no-repeat;   /* Prevents tiling of the image */
@@ -21,14 +52,26 @@
     width: 100vw;                   /* Full viewport width */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;      /* Aligns all content to the right */
     position: relative;
 }
+
+.main-content {
+    margin-bottom: 2%;
+    margin-left: auto;              /* Pushes main-content to the right */
+    padding: 20px;
+    /* background-color: aqua; */
+    width: fit-content;             /* Adjusts width based on content */
+}
 /* Styling for the welcome text and buttons */
-h1 {
-    font-size: 2.5rem;
+.main-content h1 {
+    font-size: 7.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color:#642047!important;
+}
+.main-content h2{
+    color:#6e6868!important;
 }
 
 p {
@@ -41,7 +84,6 @@ p {
     font-size: 1.2rem;
     border-radius: 30px;
 }
-
 /* Show text and hide icon on small screens */
 @media (max-width: 992px) {
     .hidden-profile{
@@ -49,5 +91,13 @@ p {
     }
     .profile{
         display:none;
+    }
+}
+@media (max-width:992px){
+    .main-content h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color:#642047!important;
     }
 }

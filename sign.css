@@ -10,6 +10,9 @@ body {
   /* background-color: var(--light); */
   margin: 2em;
 }
+.container{
+  display:flex;
+}
 
 header {
   margin: 5em;
@@ -99,21 +102,13 @@ p {
   color: var(--white);
 }
 
-.fa-google {
-  background: conic-gradient(
-    from -45deg, 
-    #4285F4 110deg,  /* Google Blue */
-    #34A853 90deg 180deg, /* Green */
-    #FBBC05 180deg 270deg, /* Yellow */
-    #EA4335 270deg  /* Red */
-  ) 73% 55%/150% 150% no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
 
 .sign-in {
   margin: 1em 0;
   text-align: center;
+}
+@media(max-width:992px){
+  .left{
+    display: hidden;
+  }
 }
